@@ -1,5 +1,3 @@
-context("check")
-
 test_that("check_sqlite_connection", {
   expect_error(
     check_sqlite_connection(1), class = "chk_error")
@@ -92,6 +90,25 @@ test_that("check_flob_query", {
   expect_error(check_flob_query(x))
   expect_error(check_flob_query(x))
 
-  x <- flobr::flob_obj
-  expect_identical(check_flob_query(x), x)
+  flob_obj <- flobr::flob_obj
+  slob_obj <- flobr:::slob_obj
+
+  blobbed_flob <- flob_obj
+  class(blobbed_flob) <- "blob"
+  flobr::chk_slob(blobbed_flob)
+  class(blobbed_flob) <- "list"
+  blobbed_flob <- blob::as_blob(blobbed_flob)
+  names(blobbed_flob) <- NULL
+
+  expect_identical(check_flob_query(flob_obj, slob = FALSE), flob_obj)
+  expect_identical(check_flob_query(flob_obj, slob = NA), flob_obj)
+  expect_identical(check_flob_query(flob_obj, slob = TRUE), blobbed_flob)
+
+  expect_identical(check_flob_query(slob_obj, slob = TRUE), slob_obj)
+  expect_identical(check_flob_query(slob_obj, slob = NA), slob_obj)
+
+  expect_error(check_flob_query("non-blob", slob = NA), "`x` must be a blob of a serialized object.")
+  # this is not ideal behavior
+  expect_error(check_flob_query(slob_obj, slob = FALSE), "Serialized element of `x` must inherit from S3 class 'exint'.")
+
 })

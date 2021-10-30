@@ -6,15 +6,12 @@
 <!-- badges: start -->
 
 [![Lifecycle:
-maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![R build
-status](https://github.com/poissonconsulting/dbflobr/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/dbflobr/actions)
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![R-CMD-check](https://github.com/poissonconsulting/dbflobr/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/dbflobr/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/poissonconsulting/dbflobr/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/dbflobr?branch=master)
+coverage](https://codecov.io/gh/poissonconsulting/dbflobr/branch/master/graph/badge.svg)](https://app.codecov.io/gh/poissonconsulting/dbflobr?branch=master)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Tinyverse
-status](https://tinyverse.netlify.com/badge/dbflobr)](https://CRAN.R-project.org/package=dbflobr)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/dbflobr)](https://cran.r-project.org/package=dbflobr)
 ![CRAN downloads](https://cranlogs.r-pkg.org/badges/dbflobr)
@@ -50,7 +47,7 @@ library(dbflobr)
 flob <- flobr::flob(system.file("extdata", "flobr.pdf", package = "flobr"))
 str(flob)
 #> List of 1
-#>  $ /Library/Frameworks/R.framework/Versions/4.0/Resources/library/flobr/extdata/flobr.pdf: raw [1:133851] 58 0a 00 00 ...
+#>  $ /Library/Frameworks/R.framework/Versions/4.1/Resources/library/flobr/extdata/flobr.pdf: raw [1:133851] 58 0a 00 00 ...
 #>  - attr(*, "class")= chr [1:2] "flob" "blob"
 
 # create a SQLite database connection 
@@ -96,8 +93,8 @@ DBI::dbDisconnect(conn)
 
 ## Inspiration
 
-  - [blob](https://github.com/tidyverse/blob)
-  - [flobr](https://github.com/poissonconsulting/flobr)
+-   [blob](https://github.com/tidyverse/blob)
+-   [flobr](https://github.com/poissonconsulting/flobr)
 
 ## Contribution
 

@@ -8,8 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-Reads and writes files to SQLite databases <https://www.sqlite.org/index.html> as flobs 
-    (a flob is a blob that preserves the file extension).
+Reads and writes files to SQLite databases <https://www.sqlite.org/index.html> as flobs (a flob is a blob that preserves the file extension).
 }
 \seealso{
 Useful links:
@@ -20,10 +19,11 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Sebastian Dalgarno \email{seb@poissonconsulting.ca} (\href{https://orcid.org/0000-0002-3658-4517}{ORCID})
+\strong{Maintainer}: Evan Amies-Galonski \email{evan@poissonconsulting.ca} (\href{https://orcid.org/0000-0003-1096-2089}{ORCID})
 
 Authors:
 \itemize{
+  \item Sebastian Dalgarno \email{seb@northbeachconsulting.ca} (\href{https://orcid.org/0000-0002-3658-4517}{ORCID})
   \item Joe Thorley \email{joe@poissonconsulting.ca} (\href{https://orcid.org/0000-0002-7683-4592}{ORCID})
 }
 

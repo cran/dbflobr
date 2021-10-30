@@ -4,7 +4,15 @@
 \alias{save_all_flobs}
 \title{Save all flobs.}
 \usage{
-save_all_flobs(table_name = NULL, conn, dir = ".", sep = "_-_")
+save_all_flobs(
+  table_name = NULL,
+  conn,
+  dir = ".",
+  sep = "_-_",
+  sub = FALSE,
+  replace = FALSE,
+  geometry = FALSE
+)
 }
 \arguments{
 \item{table_name}{A vector of character strings indicating names of tables to save flobs from.
@@ -12,9 +20,19 @@ By default all tables are included.}
 
 \item{conn}{A SQLite connection object.}
 
-\item{dir}{A character string of the path to the directory to save files to.}
+\item{dir}{A string of the path to the directory to save the files in.}
 
 \item{sep}{A string of the separator used to construct file names from values.}
+
+\item{sub}{A logical scalar specifying whether to save all existing files in a subdirectory
+of the same name (sub = TRUE) or all possible files in a subdirectory
+of the same name (sub = NA) or not nest files within a subdirectory (sub = FALSE).}
+
+\item{replace}{A flag specifying whether to replace existing files.
+If sub = TRUE (or sub = NA) and replace = TRUE then all existing files
+within a subdirectory are deleted.}
+
+\item{geometry}{A flag specifying whether to search columns named geometry for flobs.}
 }
 \value{
 An invisible named list of named vectors of the file names and new file names saved.
