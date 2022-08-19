@@ -1,6 +1,6 @@
 Package: dbflobr
 Title: Read and Write Files to SQLite Databases
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: 
     c(person(given = "Sebastian",
              family = "Dalgarno",
@@ -32,9 +32,9 @@ Suggests: covr, knitr, rmarkdown, testthat, withr
 VignetteBuilder: knitr
 Encoding: UTF-8
 Language: en-US
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 NeedsCompilation: no
-Packaged: 2021-10-29 22:26:44 UTC; evanamies-galonski
+Packaged: 2022-08-19 21:55:02 UTC; evanamies-galonski
 Author: Sebastian Dalgarno [aut] (<https://orcid.org/0000-0002-3658-4517>),
   Joe Thorley [aut] (<https://orcid.org/0000-0002-7683-4592>),
   Evan Amies-Galonski [aut, cre]
@@ -42,4 +42,4 @@ Author: Sebastian Dalgarno [aut] (<https://orcid.org/0000-0002-3658-4517>),
   Poisson Consulting [cph, fnd]
 Maintainer: Evan Amies-Galonski <evan@poissonconsulting.ca>
 Repository: CRAN
-Date/Publication: 2021-10-30 09:50:10 UTC
+Date/Publication: 2022-08-19 22:10:02 UTC

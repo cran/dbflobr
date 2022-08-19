@@ -1,7 +1,7 @@
-e396d6717c05e66e5e1903795047fe2d *DESCRIPTION
+933571ff5b31e4a0b07f7e420e7c5dea *DESCRIPTION
 3fa56d1f8acfe3b96b73b8f2c9f4a29b *LICENSE
 0e6443fec0e8a251f1cc4f8cc8ccd300 *NAMESPACE
-c20b331894895ccf3bebe1b7f7c41a69 *NEWS.md
+aeb3c3c00151f7f133ef0aacd46089c7 *NEWS.md
 1d44cb9a65df7f03369d3531af92e0b4 *R/check.R
 525efc68229f53b26476cc92ff13be3d *R/chk.R
 f4e9aed129d5e4e78099154e7e2e0714 *R/db.R
@@ -15,13 +15,13 @@ bd985f088e9b68f199514984bfa20f86 *R/ui.R
 aabac24b827a81f6b1ff681fb6dd08f8 *R/utils.R
 e08ad6c771b58bde256ef6dad2337712 *R/vld.R
 357b9a26b1937558c77de0b3a6579496 *README.md
-711ea49facdff0d62b9d3666cca7b2d1 *build/vignette.rds
+887e518a806ef6a392066594a00316bf *build/vignette.rds
 d3f509967561834140a9fe5e4cb96b6f *inst/WORDLIST
 4acc2fd9af97385cc51475119437b8f5 *inst/doc/vignette.R
 b1bc60ededff3ab6bb073afb291b69fb *inst/doc/vignette.Rmd
-8e23157af8d1e13badabbf71363803a7 *inst/doc/vignette.html
+40345988e7cef6c1944d18ea1ac22a34 *inst/doc/vignette.html
 0f3f141d1451a2322ca372e3af119f60 *man/add_blob_column.Rd
-c9d1da8d575057f2337e451dacab4a10 *man/dbflobr-package.Rd
+8fc22fdb10c8e039383613e5c3a3559f *man/dbflobr-package.Rd
 7723a27adacca216f8959479c0ef10a9 *man/delete_flob.Rd
 cc53ee213b3195fbf22bdf5d1e925960 *man/figures/logo.png
 b7d6e59fc52ae7eafcb86dd82ab2ff0a *man/import_all_flobs.Rd
